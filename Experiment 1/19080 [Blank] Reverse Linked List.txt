@@ -1,11 +1,11 @@
-LNode *p,*n;
+LNode *p,*q;
 p=L->next;
 L->next=NULL;
 while(p){
-	n=p->next;
+	q=p->next;
 	p->next=L->next;
 	L->next=p;
-	p=n;
+	p=q;
 }
 
 
