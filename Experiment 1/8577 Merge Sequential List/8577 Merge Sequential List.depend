@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1748435393 source:c:\personal folder\courselearningtask\data structure\experiment 1\8577 merge sequential list\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

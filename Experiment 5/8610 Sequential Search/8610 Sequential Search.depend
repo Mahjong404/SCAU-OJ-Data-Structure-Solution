@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1748951391 source:c:\personal folder\courselearningtask\data structure\experiment 5\8610 sequential search\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

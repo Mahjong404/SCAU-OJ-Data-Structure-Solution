@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1748615612 source:c:\personal folder\courselearningtask\data structure\experiment 2\8583 basic operations of sequential stack\main.cpp
+	<iostream>
+	<stack>
+

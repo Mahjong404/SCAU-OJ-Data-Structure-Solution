@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1748627555 source:c:\personal folder\courselearningtask\data structure\experiment 2\8584 basic operations of circular queue\main.cpp
+	<iostream>
+	<queue>
+

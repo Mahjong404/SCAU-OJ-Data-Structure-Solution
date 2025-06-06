@@ -1,0 +1,78 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <array>
+#include <queue>
+
+using namespace std;
+
+int n,width=1;
+vector<array<int,2>> child;
+
+int main()
+{
+    cin>>n;
+    child.resize(n+1);
+    for(int i=0;i<n-1;i++){
+        int x,y;
+        cin>>x>>y;
+        if(!child[x][0])
+            child[x][0]=y;
+        else
+            child[x][1]=y;
+    }
+    queue<int> q;
+    q.push(1);
+
+    while(q.size()){    //当队列不为空时继续遍历
+        width=max(width,(int)q.size());
+
+        for(int i=0;i<q.size();i++){    // 处理当前层所有节点
+            int x=q.front();            // 取出队首节点
+            q.pop();
+            if(child[x][0])             // 将子节点加入队列（下一层）
+                q.push(child[x][0]);
+            if(child[x][1])
+                q.push(child[x][1]);
+        }
+    }
+
+    cout<<width;
+    return 0;
+}
+
+
+
+/*
+Description
+二叉树的宽度指的是具有节点数目最多的那一层的节点个数。
+          1
+         / \
+        2   3
+       /
+      4
+答案为2, 第二层节点数最多，为2个节点。
+
+
+
+输入格式
+共n行。
+第一行一个整数n，表示有n个结点，编号为1至n,结点1为树根。（1<=n<=50）
+第二行至第n行，每行有两个整数x和y，表示在二叉树中x为y的父节点。x第一次出现时y为左孩子
+
+
+输出格式
+输出二叉树的宽度。
+
+
+输入样例
+5
+1 2
+1 3
+2 4
+2 5
+
+
+输出样例
+2
+*/

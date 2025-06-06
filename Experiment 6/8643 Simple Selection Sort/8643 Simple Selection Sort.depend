@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1749053105 source:c:\personal folder\courselearningtask\data structure\experiment 6\8643 simple selection sort\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

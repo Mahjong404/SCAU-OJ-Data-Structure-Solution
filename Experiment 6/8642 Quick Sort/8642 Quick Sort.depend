@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1749103382 source:c:\personal folder\courselearningtask\data structure\experiment 6\8642 quick sort\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1748940651 source:c:\personal folder\courselearningtask\data structure\experiment 3\8591 calculate next value\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	"stdio.h"
+	"stdlib.h"
+	"iostream.h"
+
